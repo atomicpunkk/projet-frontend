@@ -1,3 +1,9 @@
-<p>
-  meteo works!
-</p>
+<mat-card class="card">
+<mat-card-header>
+  <mat-card-title>{{ town.name | uppercase }}</mat-card-title>
+</mat-card-header>
+<mat-card-content>
+  <div class="wi wi-forecast-io-{{ town.icon }} weather-logo"></div>
+  {{ town.temperature }}°C;
+</mat-card-content>
+</mat-card>
